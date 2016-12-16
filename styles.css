@@ -19,6 +19,7 @@ body{
 	perspective: 500px;
 	margin: 10px;
 	/* border-radius: 10px; */
+	animation: cardDealing 5s;
 
 }
 .mg-tile-inner{
@@ -68,3 +69,18 @@ body{
 /* .mg-front, .mg-back{
 
 } */
+
+/* CARD ANIMATIONS  */
+@keyframes cardDealing{
+	0%{transform: translate(50px, 700px) }
+	10%{transform: translate(100px, 100px) skew(5deg, 5deg)}
+	20%{transform: translate(200px, 500px)}
+	30%{transform: translate(300px, 100px) skew(5deg, 5deg)}
+	40%{transform: rotateY(180deg)}
+	50%{transform: rotateX(180deg)}
+	60%{}
+	70%{}
+	80%{}
+	90%{}
+	100%{}
+}

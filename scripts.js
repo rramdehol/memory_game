@@ -1,5 +1,7 @@
 // AN ARRAY OF CARDS IMAGES
-var cards = [	
+var cards = [
+	'<img src="../blackjack/cards/6s.png">',
+	'<img src="../blackjack/cards/7s.png">',	
 	'<img src="../blackjack/cards/8s.png">',
 	'<img src="../blackjack/cards/9s.png">',
 	'<img src="../blackjack/cards/10s.png">',

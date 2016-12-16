@@ -1,0 +1,70 @@
+img{
+	/* Dont want images to be bigger than their parent div */
+	max-width: 100%;
+	
+	/* border: 2px solid black; */
+	/* Give the parent so children can move in it depth */
+	perspective: 500px;
+	border-radius: 10px;
+}
+body{
+	background-image: url("../blackjack/casinobackground.jpg")
+}
+
+.mg-tile{
+	height: 248px;
+	width: 173px;
+/* 	min-width: 200px;
+ */	/* border:  2px solid black; */
+	perspective: 500px;
+	margin: 10px;
+	/* border-radius: 10px; */
+
+}
+.mg-tile-inner{
+	height: 248px;
+	width: 173px;
+	position: relative;
+	/* Preserve the 3D for the inner children */
+	transform-style: preserve-3d;
+	transition: all 1s;
+	/* border-radius: 10px; */
+}
+.mg-front, .mg-back{
+	position: absolute;
+	top: 0;
+	left: 0;
+	/* border: 2px solid black; */
+	backface-visibility: hidden;
+	height: 248px;
+	width: 173px;
+	border-radius: 10px;
+
+}
+.mg-front{
+	transform: rotateY(180deg);
+	/* height: 170px; */
+	/* margin-top: 20px; */
+}
+.mg-back{
+	background-image: url("../blackjack/cards/deck.png");
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	/* width: 100%; */
+	/* height: 280px; */
+}
+.flip, .matched{
+	transform: rotateY(-180deg);
+}
+/* one element both classes */
+/* .mg-front.mg-back{
+
+} */
+/* one element inside another */
+/* .mg-front .mg-back{
+
+} */
+/* two completely separate elements */
+/* .mg-front, .mg-back{
+
+} */

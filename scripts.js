@@ -65,7 +65,7 @@ $(document).ready(function(){
        // STORE THE AMOUNT OF FLIP CLASSES TO A VARIABLE
        var cardsUp = $(".flip");
        // IF TWO CARDS HAVE THE FLIP CLASS 2 CARDS HAVE BEEN REVEALED 
-       if(cardsUp.length === 2){
+       if(cardsUp.length >= 2){
           // CHECK TO SEE IF THEY ARE SAME
           var cardsUpImages = cardsUp.find(".mg-front img");
           console.dir(cardsUpImages);
@@ -85,6 +85,4 @@ $(document).ready(function(){
           // DO NOTHING
        }
    })
-   
-
 });
